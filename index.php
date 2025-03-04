@@ -1,7 +1,7 @@
-<?php
+<?html
 session_start();
 if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
 ?>
@@ -15,8 +15,8 @@ if (!isset($_SESSION['admin'])) {
 <body>
     <div class="container">
         <h1>Selamat Datang, Admin!</h1>
-        <a href="users.php">Manajemen Pengguna</a> |
-        <a href="logout.php">Logout</a>
+        <a href="users.html">Manajemen Pengguna</a> |
+        <a href="logout.html">Logout</a>
     </div>
 </body>
 </html>
